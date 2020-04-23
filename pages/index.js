@@ -5,14 +5,14 @@ const Index = ({ bpi }) => {
     return (
         <Layout>
             <div>
-                <h1>Latest Bitcoin Prices</h1>
+                <h1 style={{'text-align': 'center'}}>Latest Bitcoin Prices</h1>
                 <Prices bpi={bpi} />
             </div>
         </Layout>   
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const res = await axios.get('https://api.coindesk.com/v1/bpi/currentprice.json');
     return {
         props: { bpi: res.data.bpi }
