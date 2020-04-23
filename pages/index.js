@@ -12,7 +12,7 @@ const Index = ({ bpi }) => {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const res = await axios.get('https://api.coindesk.com/v1/bpi/currentprice.json');
     return {
         props: { bpi: res.data.bpi }
