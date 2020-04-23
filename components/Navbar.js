@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => (        
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
-            <img src="https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/bitoin_btc_coin_crypto-512.png" width="30" height="30" className="d-inline-block align-top" alt="" /> {' '}
+            <img src="coin.png" width="30" height="30" className="d-inline-block align-top" alt="" /> {' '}
             BTC Price Monitor
         </a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">

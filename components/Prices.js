@@ -8,7 +8,7 @@ const Prices = ({ bpi }) => {
         <div>
             <ul className="list-group">
                 {state.map(currency => (
-                    <Price bpi={bpi} currency={currency} />
+                    <Price key={currency} bpi={bpi} currency={currency} />
                 ))}
             </ul>
         </div>
